@@ -18,8 +18,8 @@ const scrollToSection=(href)=>{
 </script>
 
 <template>
-<header class="flex justify-between items-center p-6 bg-opacity-50 relative z-20">
-  <div class="text-white text-3xl font-bold">Logo</div>
+<header class="sticky top-0 bg-night flex justify-between items-center p-6 bg-opacity-50 relative z-20">
+  <div class="text-white text-3xl font-bold">Trelastgata 21</div>
   <!-- Mobile -->
   <div class="md:hidden z-30">
     <button
@@ -55,6 +55,9 @@ const scrollToSection=(href)=>{
 
 
 </header>
+  <div class="flex justify-center py-0.5 bg-white">
+    <img src="/res/banner.png" alt="Banner" class="max-w-auto h-auto min-h-40">
+  </div>
 </template>
 
 <style scoped>
