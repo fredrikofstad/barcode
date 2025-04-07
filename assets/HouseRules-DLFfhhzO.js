@@ -1,1 +1,0 @@
-import{_ as s,c as o,o as t,a}from"./index-Dl9IHiIj.js";const r={},c={class:"relative w-full",id:"houserules","data-aos":"fade-right"};function l(n,e){return t(),o("section",c,e[0]||(e[0]=[a("h1",null,"House Rules",-1)]))}const _=s(r,[["render",l]]);export{_ as default};
