@@ -1,0 +1,1 @@
+import{_ as t,c as o,o as a,a as s}from"./index-DixzHTXH.js";const c={},r={class:"relative w-full",id:"houserules","data-aos":"fade-up"};function l(n,e){return a(),o("section",r,e[0]||(e[0]=[s("div",{class:"text-center lg:text-center"},[s("h1",null,"House Rules")],-1)]))}const d=t(c,[["render",l]]);export{d as default};
