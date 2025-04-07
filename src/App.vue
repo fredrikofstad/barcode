@@ -3,10 +3,12 @@
 import {defineAsyncComponent} from "vue";
 
 const Nav = defineAsyncComponent(()=>import("./components/Nav.vue"))
+const About = defineAsyncComponent(()=>import("./components/About.vue"))
 const Checkin = defineAsyncComponent(()=>import("./components/Checkin.vue"))
+const Checkout = defineAsyncComponent(()=>import("./components/Checkout.vue"))
+const HouseRules = defineAsyncComponent(()=>import("./components/HouseRules.vue"))
 const Footer = defineAsyncComponent(()=>import("./components/Footer.vue"))
 const BackTop = defineAsyncComponent(()=>import("./components/BackTop.vue"))
-const Map = defineAsyncComponent(()=>import("./components/Map.vue"))
 
 import Loading from "./components/Loading.vue";
 
@@ -18,7 +20,10 @@ import Loading from "./components/Loading.vue";
       <template #default>
         <div>
           <Nav />
+          <About />
           <Checkin />
+          <Checkout />
+          <HouseRules />
           <Footer />
           <BackTop />
         </div>
