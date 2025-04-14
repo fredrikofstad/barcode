@@ -67,7 +67,7 @@ const pathOptions = {
                 <GMapMarker
                     :position="joker"
                     :icon='{
-                      url: "https://raw.githubusercontent.com/fredrikofstad/barcode/refs/heads/master/res/maps/joker.png",
+                      url: "/res/maps/joker.png",
                       scaledSize: {width: 40, height: 60},
                       labelOrigin: {x: 16, y: -10}
                     }'
@@ -75,7 +75,7 @@ const pathOptions = {
                 <GMapMarker
                     :position="trelast"
                     :icon='{
-                      url: "https://raw.githubusercontent.com/fredrikofstad/barcode/refs/heads/master/res/maps/home.png",
+                      url: "/res/maps/home.png",
                       scaledSize: {width: 60, height: 60},
                       labelOrigin: {x: 16, y: -10}
                     }'
