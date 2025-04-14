@@ -1,9 +1,30 @@
+<script setup>
+const center = { lat: 59.91, lng: 10.757 }
+const joker = { lat: 59.90873259845415, lng: 10.755464987322624 }
+const trelast = {lat: 59.9081, lng:10.761752452442455}
+const path = [
+  { lat: 59.91014072475751, lng: 10.75250435332746 },
+  { lat: 59.90944782573982, lng: 10.751863345493689 },
+  { lat: 59.908606754535526, lng: 10.755304784720552 },
+  { lat: 59.9087, lng: 10.7554},
+  { lat: 59.908606754535526, lng: 10.755304784720552 },
+  { lat: 59.90729154572865, lng: 10.760728844026119 },
+  { lat: 59.908290853426884, lng: 10.761661082895463 },
+  { lat: 59.90825217110784, lng: 10.76180895526784 },
+  ]
+
+const pathOptions = {
+  path: path,
+  geodesic: true,
+  strokeColor: '#FF0000',
+  strokeOpacity: 0.6,
+  strokeWeight: 5,
+}
+
+</script>
+
 <template>
-  <section class="relative w-full" id="checkin" >
-    <div class="absolute top-0 inset-x-0 h-64 flex items-start">
-      <div class="h-24 w-2/3 bg-gradient-to-br from-[#1f2970] blur-2xl invisible opacity-40"></div>
-      <div class="h-20 w-3/5 bg-gradient-to-r from-[#0f174d] opacity-40 blur-2xl"></div>
-    </div>
+  <section class="relative w-full" id="checkin" data-aos="fade-up">
     <div class="w-full px-5 sm:px-8 ms:px12 lg:px-8 max-w-screen-lg lg:max-w-screen-xl mx-auto relative">
       <div class="grid lg-grid-cols-2 gap-10 xl:gap-14 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
         <div class="lg:py-4">
@@ -19,30 +40,55 @@
 
           <p class="text-gray-300 pt-10 text-left lg:text-left mx-auto max-w-4xl">
             The keys to the apartment are picked up in the 24/7 convenience store “Joker Barcode” located
-            roughly halfway between Oslo S and the apartment.
+            roughly halfway between Oslo S and the apartment (Joker Barcode, Dronning Eufemias gate 6B).
             On the day of your arrival you will receive a code. Just tell the cashier that you wish to pick up
             the keys and provide them with the code.
           </p>
         </div>
         <div class="flex flex-col md:flex-row items-center justify-center gap-3 px-8 py-2">
           <!-- Map  -->
+
           <div class="w-full md:w-1/2">
-            <GMapMap
-                :center="{ lat: 59.9095, lng: 10.75778 }"
-                :zoom="15.5"
-                map-type-id="roadmap"
-                style="width: 100%; height: 26rem"
-                :options="{
-          zoomControl: true,
-          mapTypeControl: false,
-          scaleControl: true,
-          streetViewControl: true,
-          rotateControl: true,
-          fullscreenControl: true,
-          clickableIcons: false
-        }"
-            />
+              <GMapMap
+                  :center="center"
+                  :zoom="15"
+                  map-type-id="roadmap"
+                  style="width: 100%; height: 26rem"
+                  :options="{
+                    zoomControl: true,
+                    mapTypeControl: false,
+                    scaleControl: true,
+                    streetViewControl: true,
+                    rotateControl: true,
+                    fullscreenControl: true,
+                    clickableIcons: false
+                  }"
+              >
+                <GMapMarker
+                    :position="joker"
+                    :icon='{
+                      url: "/res/maps/joker.png",
+                      scaledSize: {width: 40, height: 60},
+                      labelOrigin: {x: 16, y: -10}
+                    }'
+                />
+                <GMapMarker
+                    :position="trelast"
+                    :icon='{
+                      url: "/res/maps/home.png",
+                      scaledSize: {width: 60, height: 60},
+                      labelOrigin: {x: 16, y: -10}
+                    }'
+                />
+                <GMapPolyline
+                    :options="pathOptions"
+                    ref="polyline"
+                />
+
+              </GMapMap>
           </div>
+
+
 
           <!-- Image (60% width on md and up) -->
           <div class="w-full md:w-1/2 md:h-[26rem] md:shrink-0 flex justify-center items-center">
@@ -81,13 +127,13 @@
         </div>
 
 
-        <div data-aos="fade-right">
+        <div data-aos="fade-up">
 
           <h2>
             Entering the Building
           </h2>
 
-          <div class="flex flex-col md:flex-row items-center justify-center gap-6 px-26 py-2">
+          <div class="flex flex-col md:flex-row items-center justify-center gap-6 lg:px-26 md:px-2 py-2">
 
             <div class="w-full md:w-1/2 md:h-[24rem] md:max-w-[34rem] md:shrink-0 flex justify-center">
               <img
@@ -114,13 +160,13 @@
 
         </div>
 
-        <div data-aos="fade-right">
+        <div data-aos="fade-up">
 
           <h2>
             Using the Elevator
           </h2>
 
-          <div class="flex flex-col md:flex-row items-center justify-center gap-6 px-14 py-2">
+          <div class="flex flex-col md:flex-row items-center justify-center gap-6 lg:px-26 md:px-2 py-2">
 
             <!-- Image - Elevator -->
             <div class="w-full md:w-1/2 md:max-w-[32rem] md:shrink-0 flex justify-center">
@@ -144,13 +190,13 @@
 
         </div>
 
-        <div data-aos="fade-right">
+        <div data-aos="fade-up">
 
           <h2>
             Entering the Apartment
           </h2>
 
-          <div class="flex flex-col md:flex-row items-center justify-center gap-6 px-26 py-2">
+          <div class="flex flex-col md:flex-row items-center justify-center gap-6 lg:px-26 md:px-2 py-2">
 
             <div class="w-full md:w-1/2 md:h-[24rem] md:max-w-[34rem] md:shrink-0 flex justify-center">
               <img
@@ -189,5 +235,3 @@
     </div>
   </section>
 </template>
-<script setup lang="ts">
-</script>

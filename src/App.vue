@@ -6,7 +6,7 @@ const Nav = defineAsyncComponent(()=>import("./components/Nav.vue"))
 const About = defineAsyncComponent(()=>import("./components/About.vue"))
 const Checkin = defineAsyncComponent(()=>import("./components/Checkin.vue"))
 const Checkout = defineAsyncComponent(()=>import("./components/Checkout.vue"))
-const HouseRules = defineAsyncComponent(()=>import("./components/HouseRules.vue"))
+const DuringStay = defineAsyncComponent(()=>import("./components/DuringStay.vue"))
 const Footer = defineAsyncComponent(()=>import("./components/Footer.vue"))
 const BackTop = defineAsyncComponent(()=>import("./components/BackTop.vue"))
 
@@ -23,7 +23,7 @@ import Loading from "./components/Loading.vue";
           <About />
           <Checkin />
           <Checkout />
-          <HouseRules />
+          <DuringStay />
           <Footer />
           <BackTop />
         </div>

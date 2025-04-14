@@ -5,7 +5,7 @@ const Menu = ref([
   {name:'About',href:'#about'},
   {name:'Check-in',href:'#checkin'},
   {name:'Check-out',href:'#checkout'},
-  {name:'House Rules',href:'#houserules'},
+  //{name:'During Stay',href:'#duringstay'},
 ])
 const isMenuOpen = ref(false)
 const scrollToSection=(href)=>{
@@ -19,7 +19,7 @@ const scrollToSection=(href)=>{
 </script>
 
 <template>
-<header class="sticky top-0 bg-night flex justify-between items-center p-6 bg-opacity-50 relative z-20">
+<header class="sticky top-0 bg-night flex justify-between items-center p-6 bg-opacity-50 z-20">
   <div class="text-white text-3xl font-bold">Trelastgata 21</div>
   <!-- Mobile -->
   <div class="md:hidden z-30">
