@@ -75,7 +75,7 @@ const pathOptions = {
                 <GMapMarker
                     :position="trelast"
                     :icon='{
-                      url: "/res/maps/home.png",
+                      url: "./res/maps/home.png",
                       scaledSize: {width: 60, height: 60},
                       labelOrigin: {x: 16, y: -10}
                     }'
