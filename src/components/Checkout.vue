@@ -11,8 +11,9 @@
             </h1>
           </div>
           <p class="text-gray-300 pt-10 text-left lg:text-left mx-auto max-w-4xl">
-            To check out please leave all the keys in the apartment except the blue key. Lock the door
-            and on the first floor slip the blue key into the mailbox labeled “Fredrik Ofstad  H1101” (bottom left).
+            To check out please leave all the keys in the apartment except for one pair of keys. Lock the door
+            and on the first floor slip the key into the mailbox labeled “Fredrik Ofstad  H1101” (bottom left).
+            The blue or green key is recommended for this as they are the smallest and easiest to fit into the mailbox slot.
           </p>
 
 
