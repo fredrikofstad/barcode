@@ -10,35 +10,26 @@
               Check-out
             </h1>
           </div>
-          <p class="text-gray-300 pt-10 text-left lg:text-left mx-auto max-w-4xl">
-            To check out please leave all the keys in the apartment except for one pair of keys. Lock the door
-            and on the first floor slip the key into the mailbox labeled “Fredrik Ofstad  H1101” (bottom left).
-            The blue or green key is recommended for this as they are the smallest and easiest to fit into the mailbox slot.
-          </p>
-
-
-          <div class="flex flex-col md:flex-row items-center justify-center gap-6 lg:px-26   py-2">
-
-            <!-- Image -Mailboxes -->
-            <div class="w-full md:w-1/2 md:h-[24rem] md:max-w-[32rem] md:shrink-0 flex justify-center">
-              <img
-                  src="/res/checkout/mailboxes.jpg"
-                  alt="Mailboxes"
-                  class="h-full w-full object-cover rounded-lg"
-              />
-            </div>
-
-            <!-- Image - Mailbox -->
-            <div class="w-full md:w-1/2 md:h-[24rem] md:max-w-[32rem] md:shrink-0 flex justify-center">
-              <img
-                  src="/res/checkout/mailbox.jpg"
-                  alt="Mailbox"
-                  class="h-full w-full object-cover rounded-lg"
-              />
-            </div>
-
+          <div class="text-gray-300 pt-10 text-left lg:text-left mx-auto max-w-4xl">
+            <ol class="list-decimal list-inside space-y-4">
+              <li>
+                Leave <strong>all keys</strong> in the apartment <strong>except</strong> the one with the <strong>yellow and black chip</strong> (pictured above) that you received from <em>Joker Barcode</em>.
+              </li>
+              <li>
+                Use that key to <strong>lock the apartment door</strong> when you leave.
+              </li>
+              <li>
+                Return the key to the <em>Joker Barcode</em> store where you picked it up.
+                <ul class="list-disc list-inside ml-5 mt-2">
+                  <li>You don’t need to enter any code – just hand it to the cashier.</li>
+                  <li>They’ll know what to do it.</li>
+                </ul>
+              </li>
+              <li>
+                Once you’ve handed in the key, <strong>you’re all checked out!</strong>
+              </li>
+            </ol>
           </div>
-
         </div>
       </div>
     </div>
