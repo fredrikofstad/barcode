@@ -1,1 +1,0 @@
-import{_ as t,c as s,o as a,a as n}from"./index-lWa0UxuI.js";const r={},c={class:"relative w-full",id:"duringstay","data-aos":"fade-up"};function o(l,e){return a(),s("section",c,e[0]||(e[0]=[n("div",{class:"text-center lg:text-center"},null,-1)]))}const i=t(r,[["render",o]]);export{i as default};

@@ -1,0 +1,1 @@
+import{_ as t,o as s,c as a,a as n}from"./index-BToB-Tie.js";const r={},c={class:"relative w-full",id:"duringstay","data-aos":"fade-up"};function o(l,e){return s(),a("section",c,e[0]||(e[0]=[n("div",{class:"text-center lg:text-center"},null,-1)]))}const i=t(r,[["render",o]]);export{i as default};
